@@ -11,18 +11,18 @@
 	<link rel="icon" type="image/gif" href="images/favicon.gif">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
-    <meta name="google-site-verification" content="BN_LGu9LGovwkXn861np4H6QrRzhHF0Hiqfw_VVxcVY" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126394864-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-126394864-1');
-    </script>
-
+	<meta name="google-site-verification" content="BN_LGu9LGovwkXn861np4H6QrRzhHF0Hiqfw_VVxcVY" />
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126394864-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		
+		gtag('config', 'UA-126394864-1');
+	</script>
+	
 </head>
 
 <style>
@@ -37,19 +37,35 @@
 		float: none ;
 		margin-left: 20%;
 		margin-right: 20%;
+		margin-top: 2%;
+		border: 1px solid black;
+		border-radius: 10px;
+		padding: 25px;
 	}
 	
+	#container {
+		height: 100%;
+		width: 100%;
+		display: flex;
+	}
+	#leftThing {
+		margin-left: 20%;
+		width: 30%;
+	}
+	#rightThing {
+		width: 70%;
+	}
 	body {
 		font-family: 'Quantico', sans-serif;
 		font-size: 19px;
 		word-spacing: 1px;
 		color: black;
-
+		
 		background: -webkit-linear-gradient(grey, lightgrey); 
 		background: -o-linear-gradient(grey, lightgrey); 
 		background: -moz-linear-gradient(grey,lightgrey); 
 		background: linear-gradient(grey,lightgrey); 
-		background-color: lightgrey; 
+		background-color: gray;
 	}
 	
 	a {
@@ -90,96 +106,104 @@
 
 <body style="margin-left:20px;margin-top:20px">
 	
-	<div id="left_col1">
-		<img src="./images/me.png" style="border-radius: 5px" width="200px" height="250px"/>
-		<br/>
-		<h3><b>Abhishek Vasisht Bhaskar</b></h3>
-		<span>CV [<a href="./resume/cv_abhishek.pdf">pdf</a>]</span>
+	<div id="container">
+		<div id="leftThing">
+			<img src="./images/me.png" style="border-radius: 5px" width="200px" height="250px"/>
+			<br/>
+			<h3><b>Abhishek Vasisht Bhaskar</b></h3>
+			<span>CV [<a href="./resume/cv_abhishek.pdf">pdf</a>]</span>
+		</div>
+		<div id="rightThing">
+			<br/>
+			<br/>
+			<h3><b>Contact</b></h3>
+			<span>Email: abhishekvasishtb[at]gmail[dot]com</span>
+			<br/>
+			<div style="height:2px;">&nbsp;</div> 
+			<span>Location: Ithaca, NY</span>
+			<br/>
+			<div style="height:2px;">&nbsp;</div> 
+			<span>Links: </span>
+			<a href="https://scholar.google.com/citations?user=brNNU-IAAAAJ&hl=en"><i class="fa fa-google fa-1x" aria-hidden="true"></i>(Scholar)</a>
+			<a href="https://github.com/abhishekvasishtb"><i class="fa fa-github fa-1x" aria-hidden="true"></i>(GitHub)</a> 
+			<a href="https://www.linkedin.com/in/abhishekvasishtb/"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>(LinkedIn)</a>
+			<br/>
+		</div>
 	</div>
+	
 	
 	
 	<div id="left_col2">
-		<h3><b>Contact</b></h3>
-		<span>Email: abhishekvasishtb[at]gmail[dot]com</span>
-		<br/>
-		<div style="height:2px;">&nbsp;</div> 
-		<span>Location: Ithaca, NY</span>
-		<br/>
-		<div style="height:2px;">&nbsp;</div> 
-		<span>Links: </span>
-		<a href="https://scholar.google.com/citations?user=brNNU-IAAAAJ&hl=en"><i class="fa fa-google fa-1x" aria-hidden="true"></i>(Scholar)</a>
-		<a href="https://github.com/abhishekvasishtb"><i class="fa fa-github fa-1x" aria-hidden="true"></i>(GitHub)</a> 
-		<a href="https://www.linkedin.com/in/abhishekvasishtb/"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>(LinkedIn)</a>
-		<br/>
-		
+
 		<h3><b>About Me</b></h3>
 		<span>
-		  Hello! I am a Software Engineer at GrammaTech Inc, in Ithaca,
-		  NY, where I am part of
-		  the 
-		  <a href="https://www.grammatech.com/products/codesonar">CodeSonar</a>
-		  static analysis team. My work currently focuses on statistical/ML
-		  model based API usage anomaly detection using CodeSonar. In the past I
-		  was part of the team which added Objective-C support to CodeSonar using the clang frontend
-		  (more on that here -
-		  <a href="http://blogs.grammatech.com/codesonar-enters-the-world-of-ios-and-objective-c">
-			CodeSonar Enters the World of iOS and Objective-C
-          </a>
-		  ). I completed my Master's degree at
-		  <a href="http://eng-cs.syr.edu/program/computer-engineering/">Syracuse
-		  University
-		  </a> 
-		  in 2016, with a thesis `<a href="https://surface.syr.edu/etd/498/">
-			Automated code extraction from packed android applications</a>` 
-			under the advisement of <a href="https://www.cs.ucr.edu/~heng/">Dr. Heng Yin</a>.
-		</span>
-		<br/>
-
-		<h3><b>Research Interests</b></h3>
-		<span>
-			My main research interest lies in system
-			security, in techniques like <i>program analysis, memory
-			forensics, cryptography, virtualization...</i> to help solve computer and
-			software security related problems.
-		</span>
-		<br/>
-		
-		<h3 style="margin-bottom:0px; padding:0px">
-      <b>Research Papers</b>
-    </h3>  
-		
-		<ol style="padding-left:20px;">
-		  <li>
-			Things You May Not Know About Android (Un)Packers: A Systematic Study based on Whole-System Emulation
-			[<a href="https://www.cs.ucr.edu/~heng/pubs/DroidUnpack_ndss18.pdf">pdf</a>]<br>
-			Y Duan, M Zhang, <b class="myname">AV Bhaskar</b>, H Yin, X Pan, T Li, X Wang, X Wang
-			In <i>NDSS 2018, San Diego, California, USA (Acceptance Ratio: 15.4%)</i>
-		  </li>
+			Hello! I am a Software Engineer at GrammaTech Inc, in Ithaca,
+			NY, where I am part of
+			the 
+			<a href="https://www.grammatech.com/products/codesonar">CodeSonar</a>
+			static analysis team. My work currently focuses on statistical/ML
+			model based API usage anomaly detection using CodeSonar. In the past I
+			was part of the team which added Objective-C support to CodeSonar using the clang frontend
+			(more on that here -
+			<a href="http://blogs.grammatech.com/codesonar-enters-the-world-of-ios-and-objective-c">
+				CodeSonar Enters the World of iOS and Objective-C
+			</a>
+			). I completed my Master's degree at
+			<a href="http://eng-cs.syr.edu/program/computer-engineering/">Syracuse
+				University
+			</a> 
+			in 2016, with a thesis `<a href="https://surface.syr.edu/etd/498/">
+				Automated code extraction from packed android applications</a>` 
+				under the advisement of <a href="https://www.cs.ucr.edu/~heng/">Dr. Heng Yin</a>.
+			</span>
 			<br/>
 			
-			<li>
-				Extract Me If You Can: Abusing PDF Parsers in Malware Detectors.
-				[<a href="http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2017/09/extract-me-if-you-can-abusing-pdf-parsers-malware-detectors.pdf">pdf</a>]<br>
-				C Carmony, X Hu, H Yin, <b class="myname">AV Bhaskar</b>, M Zhang
-				In <br/><i>NDSS 2016, San Diego, California, USA (Acceptance Ratio: 15.4%)</i>
-			</li>
-			<br/>
-
-			<li>
-				Binary code continent: Finer-grained control flow integrity for stripped binaries.
-				[<a href="https://www.cs.ucr.edu/~heng/pubs/BinCC_acsac15.pdf">pdf</a>]<br>
-				M Wang, H Yin, <b class="myname">AV Bhaskar</b>, P Su, D Feng
-				In <br/><i>ACSAC 2015, Los Angeles, California, USA (Acceptance Ratio: 24.4%)</i>
-			</li>
-			<br/>
-		  
-	</div>
-	
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	
-
-</body>
-
+			<h3><b>Research Interests</b></h3>
+			<span>
+				My main research interest lies in system
+				security, in techniques like <i>program analysis, memory
+					forensics, cryptography, virtualization...</i> to help solve computer and
+					software security related problems.
+				</span>
+				<br/>
+				
+				<h3 style="margin-bottom:0px; padding:0px">
+					<b>Research Papers</b>
+				</h3>  
+				
+				<ol style="padding-left:20px;">
+					<li>
+						Things You May Not Know About Android (Un)Packers: A Systematic Study based on Whole-System Emulation
+						[<a href="https://www.cs.ucr.edu/~heng/pubs/DroidUnpack_ndss18.pdf">pdf</a>]<br>
+						Y Duan, M Zhang, <b class="myname">AV Bhaskar</b>, H Yin, X Pan, T Li, X Wang, X Wang
+						In <i>NDSS 2018, San Diego, California, USA (Acceptance Ratio: 15.4%)</i>
+					</li>
+					<br/>
+					
+					<li>
+						Extract Me If You Can: Abusing PDF Parsers in Malware Detectors.
+						[<a href="http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2017/09/extract-me-if-you-can-abusing-pdf-parsers-malware-detectors.pdf">pdf</a>]<br>
+						C Carmony, X Hu, H Yin, <b class="myname">AV Bhaskar</b>, M Zhang
+						In <br/><i>NDSS 2016, San Diego, California, USA (Acceptance Ratio: 15.4%)</i>
+					</li>
+					<br/>
+					
+					<li>
+						Binary code continent: Finer-grained control flow integrity for stripped binaries.
+						[<a href="https://www.cs.ucr.edu/~heng/pubs/BinCC_acsac15.pdf">pdf</a>]<br>
+						M Wang, H Yin, <b class="myname">AV Bhaskar</b>, P Su, D Feng
+						In <br/><i>ACSAC 2015, Los Angeles, California, USA (Acceptance Ratio: 24.4%)</i>
+					</li>
+					<br/>
+					
+				</div>
+				
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				
+				
+			</body>
+			
+			
