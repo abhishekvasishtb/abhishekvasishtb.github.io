@@ -38,7 +38,7 @@
 		margin-left: 20%;
 		margin-right: 20%;
 		margin-top: 2%;
-		border: 1px solid white;
+		border: 1px solid black;
 		border-radius: 10px;
 		padding: 25px;
 	}
@@ -59,14 +59,15 @@
 		font-family: 'Quantico', sans-serif;
 		font-size: 19px;
 		word-spacing: 1px;
-		color: white;
+		color: rgb(0, 0, 0);
 		
-		background-color: dimgray;
+		background-color: white;
 	}
 	
 	a {
 		color: yellow;
 		text-decoration: none;
+		background-color: black
 	}
 	
 	a:hover {
@@ -82,7 +83,14 @@
 	.myname {
 		text-decoration: underline;
 	}
-	
+	.container {
+		background-color: beige;
+		width: auto;
+		text-align: left;
+		display: inline-block;
+		border-radius: 25px;
+		padding: 10px;
+	}
 	@media only screen and (max-width: 800px) {
 		#left_col1 {
 			float: none;
@@ -101,31 +109,37 @@
 
 
 <body style="margin-left:20px;margin-top:20px">
-	 
-	<div align="center">
 	
-			<img src="./images/me.png" style="border-radius: 5px" width="200px" height="250px"/>
-			<br/>
-			<h3><b>Abhishek Vasisht Bhaskar</b></h3>
-			<span>CV [<a href="./resume/cv_abhishek.pdf">pdf</a>]</span>
-			
-			<h3><b>Contact</b></h3>
-			<span>Email: abhishekvasishtb[at]gmail[dot]com</span>
-			<br/>
-			<div style="height:2px;">&nbsp;</div> 
-			<span>Location: Ithaca, NY</span>
-			<br/>
-			<div style="height:2px;">&nbsp;</div> 
-			<span>Links: </span>
-			<a href="https://scholar.google.com/citations?user=brNNU-IAAAAJ&hl=en"><i class="fa fa-google fa-1x" aria-hidden="true"></i>(Scholar)</a>
-			<a href="https://github.com/abhishekvasishtb"><i class="fa fa-github fa-1x" aria-hidden="true"></i>(GitHub)</a> 
-			<a href="https://www.linkedin.com/in/abhishekvasishtb/"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>(LinkedIn)</a>
-
+	<div align="center">
+		
+		<img src="./images/me.png" style="border-radius: 5px" width="200px" height="250px"/>
+		<br/>
+		<h3><b>Abhishek Vasisht Bhaskar</b></h3>
+		<span>CV [<a href="./resume/cv_abhishek.pdf">pdf</a>]</span>
+		
+		<h3><b>Contact</b></h3>
+		<span>Email: abhishekvasishtb[at]gmail[dot]com</span>
+		<br/>
+		<div style="height:2px;">&nbsp;</div> 
+		<span>Location: Atlanta, GA</span>
+		<br/>
+		<div style="height:2px;">&nbsp;</div> 
+		<span>Links: </span>
+		<a href="https://scholar.google.com/citations?user=brNNU-IAAAAJ&hl=en"><i class="fa fa-google fa-1x" aria-hidden="true"></i>(Scholar)</a>
+		<a href="https://github.com/abhishekvasishtb"><i class="fa fa-github fa-1x" aria-hidden="true"></i>(GitHub)</a> 
+		<a href="https://www.linkedin.com/in/abhishekvasishtb/"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i>(LinkedIn)</a>
+		
 	</div>
 	
 	<div id="left_col2">
 		
 		<h3><b>About Me</b></h3>
+		<div class="container">
+			<span class="box"> NEWS: Starting my PhD in computer science at Georgia Tech 🐝 in Fall 2019. Will be focusing on research at the intersection of system and network security. </span>
+			
+		</div>
+		<br/>
+		
 		<span>
 			Hello! I am a Software Engineer at GrammaTech Inc, in Ithaca,
 			NY, where I am part of
